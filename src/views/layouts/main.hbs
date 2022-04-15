@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Node.js MySql</title>
+
+    <!-- Tailwind CSS Link -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+
+    <!-- Fontawesome Link -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+  </head>
+  <body class="bg-gray-200">
+    <nav class="flex py-5 bg-green-500 text-white px-24">
+      <div class="w-1/2 px-12 mr-auto">
+        <h1 class="text-2xl font-bold">My Application</h1>
+      </div>
+
+      <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
+        {{#if name}}
+        <p>{{name}}</p>
+
+        <li class="nav-item px-4">
+          <a href="/logout" class="nav-link font-semibold bg-red-500 hover:bg-red-700 py-3 px-4 rounded-md">Logout</a>
+        </li>
+
+        {{else}}
+        <li class="nav-item px-4">
+          <a href="/login" class="nav-link font-semibold hover:bg-green-700 py-3 px-4 rounded-md">Login</a>
+        </li>
+
+        <li class="nav-item px-4">
+          <a href="/register" class="nav-link font-semibold border-2 border-white hover:bg-white hover:text-green-700 py-3
+            px-4 rounded-md">Register</a>
+        </li>
+        {{/if}}
+      </ul>
+    </nav>
+
+    {{{body}}}
+
+
+  </body>
+</html>
