@@ -12,7 +12,7 @@ app.set('port', 5000);
 
 app.set('views', __dirname + '/views');
 app.engine('.hbs', engine({
-	extname: '.hbs',
+	extname: '.hbs',	
 }));
 app.set('view engine', 'hbs');
 
@@ -38,7 +38,6 @@ app.use(session({
 app.listen(app.get('port'), () => {
  console.log('listening on port ', app.get('port'));
 });
-
 app.use('/', loginRoutes);
 
 app.get('/', (req, res) => {

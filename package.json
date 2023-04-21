@@ -11,8 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.1",
-    "express": "^4.17.2",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
     "express-myconnection": "^1.0.4",
     "express-session": "^1.17.2",
